@@ -1,0 +1,16 @@
+.card {
+    background-color: white;
+    width: 400px;
+    box-shadow: 0px 0px 48px rgba(0, 0, 0, 16%);
+    margin: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card > img {
+    width: 100%;
+}
+
+.card > div {
+    padding: 4px 16px;
+}
