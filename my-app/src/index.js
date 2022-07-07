@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Countdown from './components/class/Countdown';
+import Counter from './components/class/Counter';
 import Dates from './components/class/Dates';
 import Ping from './components/class/ping';
 import PingF from './components/functional/PingF';
-// import Card from './components/functional/Card';
-// import Card2 from './components/functional/Card2';
+import Card from './components/functional/Card';
+import Card2 from './components/functional/Card2';
 import './index.css';
-// import App from './components/class/App';
-// import AppF from './components/functional/AppF';
+import App from './components/class/App';
+import AppF from './components/functional/AppF';
 import reportWebVitals from './reportWebVitals';
+import CounterF from './components/functional/CounterF';
+import RandomColor from './components/functional/RandomColor';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,10 +35,15 @@ root.render(
       <Card2 url="https://cdn-icons-png.flaticon.com/512/81/81609.png" title="TWITTER 2.0" text="lorem ipsun ala textus i dont know man more text needed to look profesional maybe a little more"/>
     </div> */}
 
-    <Ping></Ping>
+    {/* <Ping></Ping>
     <PingF></PingF>
     <Countdown></Countdown>
-    <Dates></Dates>
+    <Dates></Dates> */}
+
+    <Counter></Counter>
+    <CounterF></CounterF>
+    <RandomColor></RandomColor>
+
 
   </React.StrictMode>
 );
