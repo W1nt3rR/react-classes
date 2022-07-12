@@ -1,0 +1,70 @@
+:root {
+    --btnSize: 56px;
+    --transition: all 0.2s ease-in-out;
+    --shadow: 0px 0px 48px rgba(0, 0, 0, 16%);
+    --radius: 8px;
+}
+
+#container {
+    width: calc((var(--btnSize) + 2px * 4) * 4);
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    width: var(--btnSize);
+    height: var(--btnSize);
+    margin: 4px;
+    background-color: white;
+    border: none;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    font-size: 16pt;
+    /* transition: var(--transition); */
+}
+
+.btn:hover {
+    border: 1px solid #DDD;
+}
+
+.btn:active {
+    background-color: #DDD;
+}
+
+#input {
+    vertical-align: middle;
+    font-size: 14pt;
+    overflow: hidden;
+}
+
+#inputAux {
+    height: 12px;
+    font-size: 8pt;
+    opacity: 50%;
+}
+
+#inputContainer {
+    width: calc(100% - 8px);
+    height: var(--btnSize);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    text-align: right;
+    padding: 8px;
+    margin: 4px;
+}
+
+p {
+    margin: 4px;
+}
+
+#history {
+    width: calc(100% - 8px);
+    padding: 8px;
+    margin: 4px;
+    height: var(--btnSize);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    overflow-y: auto;
+}

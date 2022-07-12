@@ -13,6 +13,7 @@ import AppF from './components/functional/AppF';
 import reportWebVitals from './reportWebVitals';
 import CounterF from './components/functional/CounterF';
 import RandomColor from './components/functional/RandomColor';
+import Calculator from './components/functional/Calculator';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -40,9 +41,11 @@ root.render(
     <Countdown></Countdown>
     <Dates></Dates> */}
 
-    <Counter></Counter>
+    {/* <Counter></Counter>
     <CounterF></CounterF>
-    <RandomColor></RandomColor>
+    <RandomColor></RandomColor> */}
+
+    <Calculator></Calculator>
 
 
   </React.StrictMode>
