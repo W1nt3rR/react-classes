@@ -45,6 +45,8 @@ const Calculator = (props) => {
             setInput(0);
             return;
         }
+
+        addToHistory(`${operand} + ${input} = ${parseFloat(operand) + parseFloat(input)}`);
         setOperand(parseFloat(operand) + parseFloat(input));
         setInput(0);
     }
@@ -57,6 +59,7 @@ const Calculator = (props) => {
             return;
         }
 
+        addToHistory(`${operand} - ${input} = ${parseFloat(operand) - parseFloat(input)}`);
         setOperand(parseFloat(operand) - parseFloat(input));
         setInput(0);
     }
@@ -69,6 +72,7 @@ const Calculator = (props) => {
             return;
         }
 
+        addToHistory(`${operand} * ${input} = ${parseFloat(operand) * parseFloat(input)}`);
         setOperand(parseFloat(operand) * parseFloat(input));
         setInput(0);
     }
@@ -84,6 +88,7 @@ const Calculator = (props) => {
         if(input == 0)
             return;
 
+        addToHistory(`${operand} / ${input} = ${parseFloat(operand) / parseFloat(input)}`);
         setOperand(parseFloat(operand) / parseFloat(input));
         setInput(0);
     }
@@ -96,6 +101,7 @@ const Calculator = (props) => {
             return;
         }
 
+        addToHistory(`${operand} % ${input} = ${parseFloat(operand) % parseFloat(input)}`);
         setOperand(parseFloat(operand) % parseFloat(input));
         setInput(0);
     }
