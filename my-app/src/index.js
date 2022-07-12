@@ -14,6 +14,8 @@ import reportWebVitals from './reportWebVitals';
 import CounterF from './components/functional/CounterF';
 import RandomColor from './components/functional/RandomColor';
 import Calculator from './components/functional/Calculator';
+import Conditional from './components/functional/Conditional';
+import Badge from './components/functional/Badge';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -45,7 +47,15 @@ root.render(
     <CounterF></CounterF>
     <RandomColor></RandomColor> */}
 
-    <Calculator></Calculator>
+    {/* <Calculator></Calculator> */}
+
+    <Conditional extraText="ovo je extra text " extraIcon="neka ikonica " subtitle="lorem ipsum ala lula kola" text="ovo je prvi primer kartice"></Conditional>
+    <Conditional type="warning" text="ovo je prvi primer kartice"></Conditional>
+    <Conditional type="danger" text="ovo je prvi primer kartice"></Conditional>
+
+    <Badge type="badge1"></Badge>
+    <Badge type="badge2"></Badge>
+    <Badge type="twitter"></Badge>
 
 
   </React.StrictMode>
