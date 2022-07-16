@@ -38,41 +38,35 @@ function Quiz(props)
         setEnd(false);
     }
 
-    if(end)
-        return (
-            <div id={style.container}>
-                <div id={style.quiz}>
-    
-                    <h1>You scored: {points} points</h1>
-
-                    <div id={style.reset}>
-                        <button className={style.btn} onClick={handleReset}>Reset</button>
-                    </div>
-                    
-                </div>
+    const endScreen = (
+        <div id={style.quiz}>
+            <h1>You scored: {points} points</h1>
+            <div id={style.reset}>
+                <button className={style.btn} onClick={handleReset}>Reset</button>
             </div>
-        );
+        </div>
+    );
+
+    const questionScreen = (
+        <div id={style.quiz}>
+            <h3>{currentQuestion + 1}/{questions.length}</h3>
+            <h1>{questions[currentQuestion].question}</h1>
+
+            <div className={style.filler}></div>
+            
+            <div id={style.answers}>
+                {answersButtons}
+            </div>
+            
+            <div id={style.next}>
+                <button className={style.btn} onClick={handleNextQuestion}>Next</button>
+            </div>
+        </div>
+    );
 
     return (
         <div id={style.container}>
-            <div id={style.quiz}>
-                <h3>{currentQuestion + 1}/{questions.length}</h3>
-                <h1>{questions[currentQuestion].question}</h1>
-
-                <div className={style.filler}></div>
-                
-                <div id={style.answers}>
-                    {/* <button value={0} onClick={checkQuestion} className={style.btn}>{questions[currentQuestion].answers[0].answer}</button>
-                    <button value={1} onClick={checkQuestion} className={style.btn}>{questions[currentQuestion].answers[1].answer}</button>
-                    <button value={2} onClick={checkQuestion} className={style.btn}>{questions[currentQuestion].answers[2].answer}</button>
-                    <button value={3} onClick={checkQuestion} className={style.btn}>{questions[currentQuestion].answers[3].answer}</button> */}
-                    {answersButtons}
-                </div>
-                
-                <div id={style.next}>
-                    <button className={style.btn} onClick={handleNextQuestion}>Next</button>
-                </div>
-            </div>
+            { end ? endScreen : questionScreen }
         </div>
     );
 }
