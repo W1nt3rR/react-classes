@@ -1,0 +1,47 @@
+[
+    {
+        "question": "Is earth Flat?",
+        "answers": 
+        [
+            { "answer": "Ofcourse", "isTrue": false },
+            { "answer": "Yes", "isTrue": false },
+            { "answer": "No", "isTrue": true },
+            { "answer": "Earth is a turtle", "isTrue": false },
+            { "answer": "Ofcourse yes", "isTrue": false },
+            { "answer": "Ofcourse yes", "isTrue": false }
+        ]
+    },
+
+    {
+        "question": "Is astrology true?",
+        "answers": 
+        [
+            { "answer": "Yes", "isTrue": false },
+            { "answer": "No", "isTrue": true },
+            { "answer": "What is Astrology", "isTrue": false },
+            { "answer": "I don't know", "isTrue": false }
+        ]
+    },
+
+    {
+        "question": "Which band is James Hetfield from?",
+        "answers": 
+        [
+            { "answer": "PSY", "isTrue": false },
+            { "answer": "Guns n' Roses", "isTrue": false },
+            { "answer": "Metallica", "isTrue": true },
+            { "answer": "Dubioza Kolektiv", "isTrue": true }
+        ]
+    },
+
+    {
+        "question": "Which band is James Hetfield from?",
+        "answers": 
+        [
+            { "answer": "PSY", "isTrue": false },
+            { "answer": "Guns n' Roses", "isTrue": false },
+            { "answer": "Metallica", "isTrue": true },
+            { "answer": "Dubioza Kolektiv", "isTrue": true }
+        ]
+    }
+]

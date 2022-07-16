@@ -16,6 +16,7 @@ import RandomColor from './components/functional/RandomColor';
 import Calculator from './components/functional/Calculator';
 import Conditional from './components/functional/Conditional';
 import Badge from './components/functional/Badge';
+import Quiz from './components/functional/Quiz';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -49,13 +50,15 @@ root.render(
 
     {/* <Calculator></Calculator> */}
 
-    <Conditional extraText="ovo je extra text " extraIcon="neka ikonica " subtitle="lorem ipsum ala lula kola" text="ovo je prvi primer kartice"></Conditional>
+    {/* <Conditional extraText="ovo je extra text " extraIcon="neka ikonica " subtitle="lorem ipsum ala lula kola" text="ovo je prvi primer kartice"></Conditional>
     <Conditional type="warning" text="ovo je prvi primer kartice"></Conditional>
-    <Conditional type="danger" text="ovo je prvi primer kartice"></Conditional>
+    <Conditional type="danger" text="ovo je prvi primer kartice"></Conditional> */}
 
-    <Badge type="badge1"></Badge>
+    {/* <Badge type="badge1"></Badge>
     <Badge type="badge2"></Badge>
-    <Badge type="twitter"></Badge>
+    <Badge type="twitter"></Badge> */}
+
+    <Quiz></Quiz>
 
 
   </React.StrictMode>

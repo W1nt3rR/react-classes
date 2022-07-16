@@ -1,0 +1,92 @@
+:root {
+    --blur: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container
+{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quiz
+{
+    width: 50%;
+    min-height: 35vh;
+    border-radius: 32px;
+    background-color: rgb(196, 196, 196);
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: var(--blur);
+}
+
+#quiz h3 {
+    margin: 0;
+}
+
+#answers
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.btn {
+    border-radius: 8px;
+    border: none;
+    height: 48px;
+    box-shadow: var(--blur);
+    background-color: white;
+    font-size: 14pt;
+}
+
+.btn:hover {
+    background-color: rgb(248, 248, 248);
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: rgb(232, 232, 232);
+    cursor: pointer;
+}
+
+#answers button {
+    width: 48%;
+    margin: 1%;
+}
+
+.filler {
+    flex-grow: 1;
+}
+
+#next
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#next button {
+    margin-top: 16px;
+    width: 128px;
+}
+
+#reset {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#reset button {
+    width: 128px;
+}
