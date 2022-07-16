@@ -17,6 +17,8 @@ import Calculator from './components/functional/Calculator';
 import Conditional from './components/functional/Conditional';
 import Badge from './components/functional/Badge';
 import Quiz from './components/functional/Quiz';
+import TextInput from './components/functional/TextInput';
+import SimpleForm from './components/functional/SimpleForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -58,7 +60,21 @@ root.render(
     <Badge type="badge2"></Badge>
     <Badge type="twitter"></Badge> */}
 
-    <Quiz></Quiz>
+    {/* <Quiz></Quiz> */}
+
+    {/* <TextInput 
+      value="nesto" 
+      defaultValue="nesto 2" 
+      label="Neki label" 
+      onChange={(text) => {
+        console.log(text);
+        // setState
+        }
+      }>
+
+      </TextInput> */}
+
+      <SimpleForm></SimpleForm>
 
 
   </React.StrictMode>
