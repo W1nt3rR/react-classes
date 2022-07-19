@@ -21,6 +21,7 @@ import TextInput from './components/functional/TextInput';
 import SimpleForm from './components/functional/SimpleForm';
 import ToDoList from './components/functional/ToDoList';
 import TemperatureConverter from './components/functional/TemperatureConverter';
+import SearchMock from './components/functional/SearchMock';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -78,9 +79,11 @@ root.render(
 
       {/* <SimpleForm></SimpleForm> */}
 
-      {/* <ToDoList></ToDoList> */}
+      <ToDoList></ToDoList>
 
-      <TemperatureConverter />
+      {/* <TemperatureConverter /> */}
+
+      {/* <SearchMock></SearchMock> */}
 
 
   </React.StrictMode>

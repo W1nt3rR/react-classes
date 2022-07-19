@@ -2,8 +2,10 @@ import { useState } from "react";
 
 const TemperatureConverter = (props) => {
 
-    const [celsius, setCelsius] = useState(0);
-    const [fahrenheit, setFahrenheit] = useState(0);
+    // const [celsius, setCelsius] = useState(0);
+    // const [fahrenheit, setFahrenheit] = useState(0);
+
+    const [value, setValue] = useState(0);
 
     function toCelsius(fahrenheit) {
         return (fahrenheit - 32) * 5 / 9;
@@ -13,28 +15,29 @@ const TemperatureConverter = (props) => {
         return (celsius * 9 / 5) + 32;
     }
 
-    function celsiusFunction(e) {
-        setFahrenheit(toFahrenheit(celsius));
-    }
+    // function celsiusFunction(e) {
+    //     setFahrenheit(toFahrenheit(celsius));
+    // }
 
-    function fahrenheitFunction(e) {
-        setCelsius(toCelsius(fahrenheit));
-    }
+    // function fahrenheitFunction(e) {
+    //     setCelsius(toCelsius(fahrenheit));
+    // }
 
-    console.log(celsius);
+    // console.log(celsius);
 
 
     return (
         <div>
-            <TemperatureInput type="Celsius" value={celsius} setValue={setCelsius}/>
-            <button onClick={celsiusFunction}>Convert To Fahrenheit</button>
+            <TemperatureInput type="Celsius" value={value} setValue={setValue}/>
+            {/* <button onClick={celsiusFunction}>Convert To Fahrenheit</button> */}
             <br />
             <br />
-            <TemperatureInput type="Fahrenheit" value={fahrenheit} setValue={setFahrenheit}/>
-            <button onClick={fahrenheitFunction}>Convert to Celsius</button>
+            <TemperatureInput type="Fahrenheit" value={toFahrenheit(value)} setValue={(number) => setValue(toCelsius(number))}/>
+            {/* <button onClick={fahrenheitFunction}>Convert to Celsius</button> */}
         </div>
     );
 }
+
 
 function TemperatureInput(props) {
 
