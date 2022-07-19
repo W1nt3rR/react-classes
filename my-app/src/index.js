@@ -19,6 +19,7 @@ import Badge from './components/functional/Badge';
 import Quiz from './components/functional/Quiz';
 import TextInput from './components/functional/TextInput';
 import SimpleForm from './components/functional/SimpleForm';
+import ToDoList from './components/functional/ToDoList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -74,7 +75,9 @@ root.render(
 
       </TextInput> */}
 
-      <SimpleForm></SimpleForm>
+      {/* <SimpleForm></SimpleForm> */}
+
+      <ToDoList></ToDoList>
 
 
   </React.StrictMode>
