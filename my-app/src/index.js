@@ -22,6 +22,8 @@ import SimpleForm from './components/functional/SimpleForm';
 import ToDoList from './components/functional/ToDoList';
 import TemperatureConverter from './components/functional/TemperatureConverter';
 import SearchMock from './components/functional/SearchMock';
+import Composition from './components/functional/Composition';
+import MainButton from './components/functional/MainButton';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -79,11 +81,20 @@ root.render(
 
       {/* <SimpleForm></SimpleForm> */}
 
-      <ToDoList></ToDoList>
+      {/* <ToDoList></ToDoList> */}
 
       {/* <TemperatureConverter /> */}
 
       {/* <SearchMock></SearchMock> */}
+      
+      {/* <Composition left={<SearchMock />} right={<SimpleForm />}>
+        <p>text</p>
+      </Composition> */}
+
+      <MainButton text="dugme" color="red" radius="xl" size="xs"></MainButton>
+      <MainButton text="dugme" color="dark" radius="md" size="sm"></MainButton>
+      <MainButton text="dugme" color="light" radius="xs" size="lg"></MainButton>
+      <MainButton text="dugme" color="yellow" radius="lg" size="xl"></MainButton>
 
 
   </React.StrictMode>
