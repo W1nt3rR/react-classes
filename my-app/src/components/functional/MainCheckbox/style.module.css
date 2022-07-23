@@ -9,6 +9,11 @@
     margin: 4px;
     transition: all 200ms;
     font-size: 0;
+    user-select: none;
+}
+
+#text {
+    user-select: none;
 }
 
 /* Colors */

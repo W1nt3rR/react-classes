@@ -1,0 +1,36 @@
+
+
+.buttons {
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid aquamarine;
+
+}
+
+.buttons button {
+    height: 56px;
+    width: 128px;
+    font-size: 16pt;
+    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: all 200ms;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+.buttons button:hover {
+    background-color: aquamarine;
+}
+
+.buttons button:active {
+    background-color: aliceblue;
+}
+
+#buttonActive {
+    background-color: aqua;
+}
+
+.content {
+    padding: 16px;
+}

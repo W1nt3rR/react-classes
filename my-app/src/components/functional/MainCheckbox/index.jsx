@@ -86,7 +86,7 @@ const MainCheckbox = (props) => {
             <div className={`${style.common} ${getRadius()} ${getColor()} ${getSize()}`}>
                 <img src={doneIcon} alt="" style={{width: "100%", height: "100%"}}/>
             </div>
-            <p className={`${getFontSize()}`}>{text}</p>
+            <p id={style.text} className={`${getFontSize()}`}>{text}</p>
         </div>
     )
 }

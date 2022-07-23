@@ -25,6 +25,8 @@ import SearchMock from './components/functional/SearchMock';
 import Composition from './components/functional/Composition';
 import MainButton from './components/functional/MainButton';
 import MainCheckbox from './components/functional/MainCheckbox';
+import Tabs from './components/functional/Tabs';
+import TabsExample from './components/functional/TabsExample';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -92,7 +94,7 @@ root.render(
         <p>text</p>
       </Composition> */}
 
-      <MainButton text="dugme" color="red" radius="xl" size="xs"></MainButton>
+      {/* <MainButton text="dugme" color="red" radius="xl" size="xs"></MainButton>
       <MainButton text="dugme" color="dark" radius="md" size="sm"></MainButton>
       <MainButton text="dugme" color="light" radius="xs" size="lg"></MainButton>
       <MainButton text="dugme" color="yellow" radius="lg" size="md"></MainButton>
@@ -103,7 +105,38 @@ root.render(
       <MainCheckbox radius="md" size="lg" color="yellow" text="I agree to sell myself to Google"/>
       <MainCheckbox radius="lg" size="sm" color="light" text="I agree to join the Italian Mafia"/>
       <MainCheckbox radius="xl" size="md" color="red" text="I agree to sell my privacy"/>
-      <MainCheckbox text="I agree to join the Yakuza"/>
+      <MainCheckbox text="I agree to join the Yakuza"/> */}
+
+      {/* <Tabs onChange={(i) => console.log(i)} pages={[
+        {
+          title: "Page 1",
+          content: <p>idk man </p>
+        },
+        {
+          title: "Page 2",
+          content: <p>idk man 2</p>
+        },
+        {
+          title: "Page 3",
+          content: <p>idk man 3</p>
+        },
+        {
+          title: "Test Tab",
+          content: <div>
+            <p>Testing tab or something</p>
+          </div>
+        },
+        {
+          title: "Page 4",
+          content: <div>
+            <p>WOOOO</p>
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"></img>
+          </div>
+        }
+      ]}
+      /> */}
+
+      <TabsExample />
 
 
   </React.StrictMode>
