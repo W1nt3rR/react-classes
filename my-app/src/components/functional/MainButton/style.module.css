@@ -5,18 +5,19 @@
 
 /* Colors */
 .main {
-    background-color: black;
+    background-color: #2c2c2c;
     color: white;
 }
 .red {
-    background-color: red;
+    background-color: #c62828;
+    color: white;
 }
 .yellow {
-    background-color: yellow;
+    background-color: #ffeb3b;
     color: black;
 }
 .light {
-    background-color: lightgray;
+    background-color: #cacaca;
     color: black;
 }
 

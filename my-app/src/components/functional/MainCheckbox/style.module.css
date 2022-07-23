@@ -1,0 +1,101 @@
+.container {
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.common {
+    border: none;
+    margin: 4px;
+    transition: all 200ms;
+    font-size: 0;
+}
+
+/* Colors */
+.unchecked {
+    border: 1px solid lightgray;
+}
+.dark {
+    background-color: #2c2c2c;
+}
+.red {
+    background-color: #c62828;
+}
+.yellow {
+    background-color: #ffeb3b;
+}
+.light {
+    background-color: #cacaca;
+}
+
+/* Radius */
+.radiusNull {
+    border-radius: 0;
+}
+.radiusXS {
+    border-radius: 10%;
+}
+.radiusSM {
+    border-radius: 20%;
+}
+.radiusMD {
+    border-radius: 30%;
+}
+.radiusLG {
+    border-radius: 40%;
+}
+.radiusXL {
+    border-radius: 50%;
+}
+
+/* Size */
+.sizeNull {
+    width: 12px;
+    height: 12px;
+    padding: 2px;
+}
+.sizeXS {
+    width: 16px;
+    height: 16px;
+    padding: 2px;
+}
+.sizeSM {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+}
+.sizeMD {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+}
+.sizeLG {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+.sizeXL {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+}
+
+/* Font Size */
+.fontSizeNull {
+    font-size: 10px;
+}
+.fontSizeXS {
+    font-size: 12px;
+}
+.fontSizeSM {
+    font-size: 14px;
+}
+.fontSizeMD {
+    font-size: 16px;
+}
+.fontSizeLG {
+    font-size: 18px;
+}
+.fontSizeXL {
+    font-size: 20px;
+}

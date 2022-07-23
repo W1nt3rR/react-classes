@@ -24,6 +24,7 @@ import TemperatureConverter from './components/functional/TemperatureConverter';
 import SearchMock from './components/functional/SearchMock';
 import Composition from './components/functional/Composition';
 import MainButton from './components/functional/MainButton';
+import MainCheckbox from './components/functional/MainCheckbox';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -95,6 +96,13 @@ root.render(
       <MainButton text="dugme" color="dark" radius="md" size="sm"></MainButton>
       <MainButton text="dugme" color="light" radius="xs" size="lg"></MainButton>
       <MainButton text="dugme" color="yellow" radius="lg" size="xl"></MainButton>
+
+      <MainCheckbox radius="xl" size="xl" color="dark" text="I agree"/>
+      <MainCheckbox radius="sm" size="xs" color="red"/>
+      <MainCheckbox radius="md" size="lg" color="yellow" text="I agree to sell myself to Google"/>
+      <MainCheckbox radius="lg" size="sm" color="light" text="I agree to join the Italian Mafia"/>
+      <MainCheckbox radius="xl" size="md" color="red" text="I agree to sell my privacy"/>
+      <MainCheckbox text="I agree to join the Yakuza"/>
 
 
   </React.StrictMode>
