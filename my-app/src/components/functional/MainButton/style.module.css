@@ -1,10 +1,21 @@
-.btnCommon {
+.common {
     border: none;
     margin: 4px;
+    transition: all 200ms;
+}
+
+.common:hover {
+    filter: brightness(1.15);
+}
+
+.common:active {
+    /* filter: brightness(130%); */
+    /* filter: opacity(0.9); */
+    filter: brightness(1);
 }
 
 /* Colors */
-.main {
+.dark {
     background-color: #2c2c2c;
     color: white;
 }

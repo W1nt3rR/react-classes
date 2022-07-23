@@ -95,7 +95,8 @@ root.render(
       <MainButton text="dugme" color="red" radius="xl" size="xs"></MainButton>
       <MainButton text="dugme" color="dark" radius="md" size="sm"></MainButton>
       <MainButton text="dugme" color="light" radius="xs" size="lg"></MainButton>
-      <MainButton text="dugme" color="yellow" radius="lg" size="xl"></MainButton>
+      <MainButton text="dugme" color="yellow" radius="lg" size="md"></MainButton>
+      <MainButton text="dugme" color="red" radius="xl" size="xl"></MainButton>
 
       <MainCheckbox radius="xl" size="xl" color="dark" text="I agree"/>
       <MainCheckbox radius="sm" size="xs" color="red"/>

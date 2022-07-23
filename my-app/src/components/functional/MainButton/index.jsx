@@ -7,7 +7,7 @@ const MainButton = (props) => {
     const getColor = () => {
         switch(color) {
             case "dark":
-                return style.main;
+                return style.dark;
             case "red":
                 return style.red;
             case "yellow":
@@ -15,7 +15,7 @@ const MainButton = (props) => {
             case "light":
                 return style.light;
             default:
-                return style.main;
+                return style.dark;
         }
     }
 
@@ -54,7 +54,7 @@ const MainButton = (props) => {
     }
 
     return (
-        <button className={`${getSize()} ${style.btnCommon} ${getColor()} ${getRadius()}`}>{text}</button>
+        <button className={`${getSize()} ${style.common} ${getColor()} ${getRadius()}`}>{text}</button>
     )
 }
 
