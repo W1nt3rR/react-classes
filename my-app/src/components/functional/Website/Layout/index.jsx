@@ -6,7 +6,9 @@ const Layout = (props) => {
     return (
         <div>
             <Nav />
-                {props.children}
+                <div style={{padding: "80px"}}>
+                    {props.children}
+                </div>
             <Footer logo={logo}/>
         </div>
     )

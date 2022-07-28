@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
-import Countdown from './components/class/Countdown';
+import CountdownOLD from './components/class/CountdownOLD';
 import Counter from './components/class/Counter';
 import Dates from './components/class/Dates';
 import Ping from './components/class/ping';
@@ -28,6 +28,8 @@ import MainCheckbox from './components/functional/MainCheckbox';
 import Tabs from './components/functional/Tabs';
 import TabsExample from './components/functional/TabsExample';
 import Website from './components/functional/Website';
+import Fragments from './components/functional/Fragments';
+import Countdown from './components/functional/Countdown';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -139,7 +141,11 @@ root.render(
 
       {/* <TabsExample /> */}
 
-      <Website />
+      {/* <Website /> */}
+
+      {/* <Fragments></Fragments> */}
+
+      <Countdown></Countdown>
 
 
   </React.StrictMode>
